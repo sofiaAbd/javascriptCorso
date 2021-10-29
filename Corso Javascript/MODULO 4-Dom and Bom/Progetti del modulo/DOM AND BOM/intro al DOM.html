@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>corso on demand Javascript/Jquery</title>
+</head>
+<body>
+
+  
+<div id="div">fabio</div>
+  <p id="js"></p>
+  <a id="link">Google</a>
+
+  <script>
+      
+      function myFunc(nome){
+
+        return nome;
+      }
+
+    let js =document.getElementById("js").innerHTML = myFunc('fabio')
+    document.getElementById('js').style.color= 'red'
+    let element =document.getElementById("div").innerHTML = 'intestazione';
+    element.setAttribute('style', 'color:red');
+    document.getElementById("link").setAttribute("href", "https://www.google.com");
+   
+
+    let para = document.createElement("h6");//inizio document.createElement
+let node = document.createTextNode("This is new.");
+para.appendChild(node);
+let element = document.getElementById('dom');
+element.appendChild(para);// fine document.createElement
+
+</script>
+    
+
+    
+</body>
+</html>

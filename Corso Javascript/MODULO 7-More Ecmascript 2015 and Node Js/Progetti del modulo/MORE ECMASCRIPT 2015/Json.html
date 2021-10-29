@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="js"></p>
+
+    <script>
+
+let myJSON = '{"name":"John", "age":31, "city":"New York"}';
+let myOb = JSON.parse(myJSON);
+
+console.log(myOb);
+    
+document.getElementById("demo").innerHTML = myOb.name
+
+myObj = {name: "John", age: 31, city: "New York"};
+myJSO = JSON.stringify(myObj);
+
+document.getElementById("js").innerHTML = myJSO
+
+
+    </script>
+</body>
+</html>

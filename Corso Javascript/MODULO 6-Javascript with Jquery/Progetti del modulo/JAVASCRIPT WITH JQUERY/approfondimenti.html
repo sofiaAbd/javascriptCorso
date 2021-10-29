@@ -1,0 +1,181 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+
+       .div1{
+
+         background-color: yellow;
+         color: tomato;
+         border: solid 3px;
+         float: left;
+         width:25%;
+         height: 25%;
+         border-style: dotted;
+        
+
+       }
+
+       .div2{
+
+            
+         background-color:tomato;
+         color: black;
+         border: solid 3px;
+         float: left;
+         margin-left: 5%;
+         width:25%;
+         height: 25%;
+         border-style: dotted;
+        
+
+
+
+
+             }
+
+
+             .div3{
+
+                background-color:rgb(233, 106, 8);
+         color: white;
+         border: solid 3px;
+         float: left;
+         margin-left: 5%;
+         width:25%;
+         height: 25%;
+         border-style: dotted;
+
+
+
+
+         }
+
+
+         #button{
+
+          color:white;
+          background-color: tomato;
+          border-radius:20px;
+
+         }
+
+         #button2{
+
+color:white;
+background-color: tomato;
+border-radius:20px;
+
+}
+
+
+#button3{
+
+color:white;
+background-color: tomato;
+border-radius:20px;
+margin-bottom: 15px;
+
+}
+
+#form{
+
+margin-top: 2%;
+
+}
+
+    </style>
+</head>
+<body>
+
+        <button id="button">Button1</button>
+        <button id="button2">Button2</button>
+        <button id="button3">Button3</button>
+<br>
+
+    <div class="div1">
+
+        CONTAINER N 1
+
+
+
+    </div>
+    
+
+     
+    <div class="div2">
+
+        CONTAINER N 2
+
+
+
+    </div>
+
+    
+    
+    <div class="div3">
+
+        CONTAINER N 3
+
+
+
+    </div>
+
+
+
+     
+          
+
+          
+         <form name= "form_submit" id="form" action="localhost:8080" method="post"><br><br>
+        <label for="form" style="color:red;">Compila il form</label><br><br>
+          Enter Name: <input type="text" name="fname" required><br><br>
+          Enter Surname: <input type="password" name="fname" minlength="6" maxlength="8" required><br><br>
+          Enter E-mail: <input type="email" id="E-mail" name="E-mail" placeholder="e-mail address"><br><br>
+         
+          <input type="submit"  value="Invia">
+        </form>
+                       
+
+            <script>
+               
+
+               $(document).ready(function(){
+            $("#button").click(function(){
+                $(".div1").hide();
+               
+
+            });
+
+        });   
+
+
+        $("#button2").click(function(){
+            $(".div1").css("background-color","red").show()
+            $("#form").hide();
+         
+
+        });
+
+
+        $("#button3").click(function(){
+          
+            $("div").hide();
+
+        });
+
+
+            </script>
+
+
+    
+</body>
+</html>
